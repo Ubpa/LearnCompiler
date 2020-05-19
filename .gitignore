@@ -1,0 +1,15 @@
+# antlr4 fils
+*.java
+*.interp
+*.tokens
+*.class
+
+# binary files
+*.png
+*.jpg
+*.bmp
+*.gif
+
+*.pdf
+
+*.mp4

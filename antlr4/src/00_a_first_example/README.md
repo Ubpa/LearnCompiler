@@ -4,17 +4,17 @@
 
 ```c
 // Define a grammar called Hello
-grammar Hello;
+grammar Hello;            // Define a grammar called Hello
 r  : 'hello' ID ;         // match keyword hello followed by an identifier
 ID : [a-z]+ ;             // match lower-case identifiers
-WS : [ \t\r\n]+ -> skip ; // skip spaces, tabs, newlines
+WS : [ \t\r\n]+ -> skip ; // skip spaces, tabs, newlines, \r (Windows)
 ```
 
 然后执行命令
 
 ```bash
-antlr4 Hello.g4
-javac Hello*.java
+antlr4 Hello.g4   # Generate parser and lexer using antlr4 alias from before
+javac *.java # Compile ANTLR-generated code
 ```
 
 然后执行命令
@@ -40,7 +40,7 @@ hello ubpa
 还有 GUI 模式，如下命令
 
 ```bash
-grun Hello r -tree
+grun Hello r -tree # start the TestRig on grammar Hello at rule r
 ```
 
 然后再命令框中输入
