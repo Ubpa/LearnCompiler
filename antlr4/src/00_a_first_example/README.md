@@ -23,7 +23,7 @@ javac *.java # Compile ANTLR-generated code
 grun Hello r -tree
 ```
 
-然后再命令框中输入
+然后在命令框中输入
 
 ```bash
 hello ubpa
@@ -40,7 +40,7 @@ hello ubpa
 还有 GUI 模式，如下命令
 
 ```bash
-grun Hello r -tree # start the TestRig on grammar Hello at rule r
+grun Hello r -gui # start the TestRig on grammar Hello at rule r
 ```
 
 然后再命令框中输入
